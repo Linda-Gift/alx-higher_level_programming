@@ -2,3 +2,4 @@
 str = "Holberton School"
 print 3 * "Holberton School"
 print(str[0:8])
+print '\n'
