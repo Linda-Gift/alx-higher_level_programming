@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-calculator_1
-
 def add(a, b):
     """My addition function
 
@@ -52,5 +50,3 @@ def div(a, b):
     """
 
     return (a / b)
-
-
