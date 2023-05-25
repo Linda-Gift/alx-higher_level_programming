@@ -7,6 +7,7 @@ from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
 from relationship_city import Base, City
 
+
 class State(Base):
     """ Represents a state column for a MySQL table
     __tablename__ (str): The name of the MySQL table to store States
@@ -18,4 +19,3 @@ class State(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(String(128), nullable=False)
     cities = relationship("City", backref="state", cascade="all, delete")
-
